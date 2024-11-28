@@ -1,0 +1,85 @@
+.projects {
+  background-color: ##dcdde0;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.project-list, .technology-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-card, .technology-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card, .technology-card a:hover {
+  text-decoration: none;
+}
+
+.project-card .icon {
+  justify-content: center;
+}
+
+.project-card h3 {
+  color: black; /* Set h3 text color to black */
+}
+
+.project-card p {
+  color: gray; /* Set p text color to gray */
+}
+
+.project-card img {
+  max-width: 100%;
+  max-height: 100px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+.icon .tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px; /* Adjust the size as needed */
+  color: gray; /* Or use a specific hex color like #888 */
+  font-style: italic;
+}
+
+.icon:hover .tooltip {
+  display: block;
+}
+
+.icon {
+  position: relative; /* Make the icon a positioning context */
+  display: inline-block; /* Ensure the icon has a width for centering */
+}
+
+.tooltip {
+  display: block; /* or inline-block if you want to control width */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(-55% - 5px); /* Adjust the spacing as needed */
+  white-space: nowrap; /* Prevent the tooltip from wrapping */
+}
+
+a.icon:hover {
+  transform: scale(1.10); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing function as needed */
+}
